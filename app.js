@@ -26,7 +26,7 @@ app.use(rateLimiter({
   windowMs: 15*60*1000, //15minutes
   max: 100, //Limit each IP to 100 requests per windowsMs
 }))
-app.use(express.static())
+
 app.use(express.json());
 // extra  security packages
 app.use(helmet())
