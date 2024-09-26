@@ -28,6 +28,7 @@ app.use(rateLimiter({
 }))
 
 app.use(express.json());
+app.use(express.static('./public'))
 // extra  security packages
 app.use(helmet())
 app.use(cors())
